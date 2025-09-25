@@ -33,8 +33,7 @@ int main() {
     return 0;
 }
 
-/*
-SAMPLE OUTPUT ::
+/*OUTPUT
 
 A
 B
