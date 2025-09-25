@@ -84,9 +84,9 @@
 **Description:** Demonstrates the fundamental concept of creating a single node in a linked list, showing how to access node data and pointer values.
 
 **Algorithm:**
-1. Define a Node class with integer data and next pointer
-2. Create constructor to initialize node with given data value
-3. Set next pointer to NULL by default
+1. Define a Node class with integer data and a next pointer
+2. Create a constructor to initialise the node with the given data value
+3. Set the next pointer to NULL by default
 4. Create a single node object with value 1
 5. Display the node's data value
 6. Display the next pointer value (should be NULL/0)
@@ -106,11 +106,11 @@
 **Description:** Implements multiple node creation and linking to form a simple linked list with character data, demonstrating basic traversal techniques.
 
 **Algorithm:**
-1. Define Node class with character data type and next pointer
+1. Define the Node class with a character data type and a next pointer
 2. Create three separate nodes with values 'A', 'B', and 'C'
 3. Manually link the nodes: n1->next = n2, n2->next = n3
 4. Set the last node's next pointer to NULL
-5. Implement traversal using a temporary pointer starting from first node
+5. Implement traversal using a temporary pointer starting from the first node
 6. Display each node's data while moving to the next node
 7. Continue until reaching NULL (end of list)
 8. Print each character on a new line
@@ -126,20 +126,20 @@
 **File:** `linked_lists.cpp`  
 **Experiment ID:** LL-03
 
-**Description:** Demonstrates advanced linked list operations including dynamic head insertion and complete list traversal with a more comprehensive implementation.
+**Description:** Demonstrates advanced linked list operations, including dynamic head insertion and complete list traversal with a more comprehensive implementation.
 
 **Algorithm:**
-1. Define Link class with integer data and next pointer
-2. Create constructor for proper node initialization
-3. Implement insert_head() function for adding nodes at the beginning
-4. Create new node with given data value
-5. Set new node's next pointer to current head
-6. Update head pointer to point to new node
+1. Define the Link class with integer data and a next pointer
+2. Create a constructor for proper node initialisation
+3. Implement the insert_head() function for adding nodes at the beginning
+4. Create a new node with the given data value
+5. Set the new node's next pointer to the current head
+6. Update the head pointer to point to the new node
 7. Implement disp() function for formatted list display
-8. Use temporary pointer for traversal without modifying head
+8. Use a temporary pointer for traversal without modifying the head
 9. Display data with arrows showing link connections
 10. Demonstrate multiple insertions (30, 32, 35)
-11. Show how list grows with each insertion at head position
+11. Show how the list grows with each insertion at the head position
 
 **Key Learning:** Implementing dynamic insertion operations and understanding how head insertion affects the order of elements in the linked list.
 
@@ -152,7 +152,7 @@
 3. **Pointer Manipulation**: Working with pointers to create links between nodes
 4. **Traversal Algorithms**: Implementing sequential access to list elements
 5. **Insertion Operations**: Adding new nodes at different positions
-6. **List Display**: Creating formatted output to visualize list structure
+6. **List Display**: Creating formatted output to visualise list structure
 7. **Dynamic Data Structures**: Understanding how linked lists grow and shrink
 8. **Object-Oriented Implementation**: Using classes to encapsulate node behavior
 
@@ -171,8 +171,8 @@
 
 - **Dynamic Memory Allocation**: Memory is allocated at runtime as needed
 - **Efficient Insertion/Deletion**: O(1) time complexity for insertion at head
-- **Memory Utilization**: No memory is wasted as only required nodes are created
-- **Flexibility**: Easy to modify structure and implement various list operations
+- **Memory Utilisation**: No memory is wasted as only required nodes are created
+- **Flexibility**: Easy to modify the structure and implement various list operations
 - **No Size Limitations**: Can grow as large as available memory allows
 - **Easy Implementation**: Simple to understand and implement basic operations
 - **Modular Design**: Each node is independent, making debugging easier
@@ -180,26 +180,26 @@
 ## Important Concepts:
 
 - **Head Pointer**: Critical reference point for accessing the entire list
-- **NULL Termination**: Last node's next pointer must be NULL to indicate end
+- **NULL Termination**: Last node's next pointer must be NULL to indicate the end
 - **Memory Leaks**: Proper deallocation of nodes when deleting or destroying lists
 - **Pointer Arithmetic**: Understanding how pointers navigate through nodes
 - **Pass by Reference**: Using reference parameters for functions that modify the list
 - **Temporary Pointers**: Using auxiliary pointers for traversal without losing head reference
-- **Node Construction**: Proper initialization of data and pointer members
+- **Node Construction**: Proper initialisation of data and pointer members
 
 ## Best Practices:
 
-- **Initialize Pointers**: Always initialize next pointers to NULL in constructors
+- **Initialise Pointers**: Always initialise next pointers to NULL in constructors
 - **Check NULL Pointers**: Validate pointers before dereferencing to avoid crashes
 - **Use Temporary Pointers**: Preserve head pointer during traversal operations
-- **Memory Management**: Delete allocated nodes when removing from list
+- **Memory Management**: Delete allocated nodes when removing from the list
 - **Consistent Naming**: Use descriptive names for node classes and pointer variables
 - **Error Handling**: Check for empty lists and invalid operations
 - **Code Documentation**: Comment complex pointer manipulations for clarity
 
 ## Common Linked List Operations:
 
-- **Creation**: Allocating memory and initializing the first node
+- **Creation**: Allocating memory and initialising the first node
 - **Insertion**: Adding nodes at head, tail, or specific positions
 - **Deletion**: Removing nodes from various positions in the list
 - **Traversal**: Visiting each node sequentially from head to tail
@@ -273,3 +273,7 @@ while (head != NULL) {
 - **Memory Testing**: Verify proper allocation and deallocation
 - **Performance Testing**: Measure time complexity of operations
 - **Stress Testing**: Test with large datasets and edge cases
+
+## Conclusion  
+
+Linked lists provide dynamic memory management with efficient insertion and deletion. This experiment demonstrated node creation, linking, traversal, and head insertion, highlighting their flexibility, advantages, and practical applications despite extra pointer overhead.
