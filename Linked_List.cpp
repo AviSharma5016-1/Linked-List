@@ -45,8 +45,7 @@ int main() {
     return 0;
 }
 
-/*
-SAMPLE OUTPUT ::
+/*OUTPUT
 
 30->NULL
 32->30->NULL
